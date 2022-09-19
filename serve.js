@@ -23,7 +23,7 @@ const path = (argv.directory && require('fs').lstatSync(argv.directory).isDirect
 
 
 app.use((req, res, next) => {
-    console.log(req.connection.remoteAddress.split(':')[3], req.originalUrl)
+    console.log(req.connection.remoteAddress.split(':')[3] || req.headers['x-forwarded-for'], req.originalUrl)
     next()
 })
 
