@@ -1,4 +1,11 @@
 Simple node.js fileserver using express & yargs
 
+Installation
+```
+npm install
+```
 
-| npm install && node index.js -p (PORT) -d (DIRECTORY)
+Usage
+```
+node index.js -p (PORT) -d (DIRECTORY)
+```
