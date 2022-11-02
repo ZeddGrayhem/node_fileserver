@@ -1,4 +1,4 @@
-Simple node.js fileserver using express & yargs
+Simple node.js fileserver using express & yargs made for CTF
 
 
 Installation
