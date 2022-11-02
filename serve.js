@@ -27,9 +27,8 @@ app.use((req, res, next) => {
     next()
 })
 
-app.use('/', express.static(path))
-
 app.get('/', (req, res) => res.send('=> Connection succesful'))
+app.use('/', express.static(path))
 
 app.listen(port, () => {
     console.log(`Started sharing files on port ${port}`)
