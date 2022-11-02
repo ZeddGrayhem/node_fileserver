@@ -27,7 +27,7 @@ app.use((req, res, next) => {
     next()
 })
 
-app.use('/download', express.static(path))
+app.use('/', express.static(path))
 
 app.get('/', (req, res) => res.send('=> Connection succesful'))
 
